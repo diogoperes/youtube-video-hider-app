@@ -1,0 +1,48 @@
+{
+  "manifest_version": 2,
+  "name": "YouTube Video Hider",
+  "version": "0.0.0.1",
+
+//  "default_locale": "en",
+  "description": "Hide youtube videos and thumbnails",
+
+  "browser_action": {
+    "default_icon": "./img/eye.png",
+    "default_popup": "./popup.html"
+  },
+
+  "authors": [{
+    "name" : "Diogo Peres",
+    "homepage" : "http://www.mrperes.com/"
+  }],
+
+  "keywords": [
+    "youtube",
+    "block",
+    "video",
+    "hide",
+    "show"
+  ],
+
+  "permissions": [
+   "activeTab",
+   "tabs",
+   "http://*/*",
+   "https://*/*",
+   "storage",
+   "declarativeContent"
+   ],
+  "content_scripts": [
+    {
+        "matches": ["https://www.youtube.com/*","http://www.youtube.com/*"],
+        "js": ["./js/contentscript.js", "./js/hideVideoScript.js", "./js/showVideoScript.js"],
+        "run_at": "document_end"
+    }
+  ],
+  "background": {
+    "scripts": ["./js/background.js"],
+    "persistent":true
+  }
+
+
+}
