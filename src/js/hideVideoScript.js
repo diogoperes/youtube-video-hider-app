@@ -38,8 +38,8 @@ function hide(actionConfig) {
 function minimize() {
   console.log('hideVideos');
   let style = '';
-  style += 'ytd-thumbnail.ytd-compact-video-renderer, ' + 'ytd-thumbnail.ytd-compact-radio-renderer, ' + 'ytd-playlist-thumbnail.ytd-compact-playlist-renderer {' + 'height: 34px;' + 'width: 61px;' + '}';
-  style += 'ytd-thumbnail.style-scope.ytd-compact-video-renderer:hover, ' + 'ytd-thumbnail.style-scope.ytd-compact-radio-renderer:hover, ' + 'ytd-playlist-thumbnail.ytd-compact-playlist-renderer:hover {' + 'height: 94px;' + 'width: 168px;' + '}';
+  style += 'ytd-thumbnail.ytd-compact-video-renderer, ' + 'ytd-thumbnail.ytd-compact-radio-renderer, ' + 'ytd-playlist-thumbnail.ytd-compact-playlist-renderer {' + 'height: 34px !important;' + 'width: 61px !important;' + '}';
+  style += 'ytd-thumbnail.style-scope.ytd-compact-video-renderer:hover, ' + 'ytd-thumbnail.style-scope.ytd-compact-radio-renderer:hover, ' + 'ytd-playlist-thumbnail.ytd-compact-playlist-renderer:hover {' + 'height: 94px !important;' + 'width: 168px !important;' + '}';
   style += '#metadata-line.style-scope.ytd-video-meta-block {' + 'display: none;' + '}';
 
   //main video
