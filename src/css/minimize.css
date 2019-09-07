@@ -1,0 +1,30 @@
+ytd-thumbnail.ytd-compact-video-renderer, ytd-thumbnail.ytd-compact-radio-renderer, ytd-playlist-thumbnail.ytd-compact-playlist-renderer {
+    height: 34px !important;
+    width: 61px !important;
+}
+
+ytd-thumbnail.style-scope.ytd-compact-video-renderer:hover, ytd-thumbnail.style-scope.ytd-compact-radio-renderer:hover, ytd-playlist-thumbnail.ytd-compact-playlist-renderer:hover {
+    height: 94px !important;
+    width: 168px !important;
+}
+
+#metadata-line.style-scope.ytd-video-meta-block {
+    display: none;
+}
+
+.html5-main-video {
+    opacity: 0 !important;
+}
+
+#player-container {
+    height: 90px !important;
+    background: #000000; border-radius: 5px;
+}
+
+#player {
+    height: 100px !important;
+}
+
+img.yt-img-shadow {
+    width: 70px;
+}

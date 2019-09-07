@@ -26,7 +26,6 @@ let CONFIGS = [
 ];
 
 console.log('content script loaded');
-var isVideosHiden;
 
 chrome.storage.onChanged.addListener(function (changes, namespace) {
         for (key in changes) {

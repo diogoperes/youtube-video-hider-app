@@ -1,0 +1,3 @@
+#thumbnail #img, #movie_player .html5-video-container {
+    filter: invert(1);
+}

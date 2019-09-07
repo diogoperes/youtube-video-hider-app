@@ -1,8 +1,8 @@
 function show() {
   console.log('Videos Shown');
 
-  var head = document.getElementsByTagName('head')[0];
-  var myStyleSheet = document.getElementById('myStyleSheet');
+  let head = document.getElementsByTagName('head')[0];
+  let myStyleSheet = document.getElementById('youtubeVideoHider');
   if (myStyleSheet) {
     head.removeChild(myStyleSheet);
   }
