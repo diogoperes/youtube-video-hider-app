@@ -1,3 +1,4 @@
+/*youtube video side bar thumbnails*/
 ytd-thumbnail.ytd-compact-video-renderer, ytd-thumbnail.ytd-compact-radio-renderer, ytd-playlist-thumbnail.ytd-compact-playlist-renderer {
     height: 34px !important;
     width: 61px !important;
@@ -23,8 +24,14 @@ ytd-thumbnail.style-scope.ytd-compact-video-renderer:hover, ytd-thumbnail.style-
 
 #player {
     height: 100px !important;
+    overflow: hidden;
 }
 
-img.yt-img-shadow {
+/*youtube main page thumbnails*/
+.ytd-rich-grid-video-renderer img.yt-img-shadow {
     width: 70px;
+}
+
+.ytd-rich-grid-video-renderer img.yt-img-shadow:hover {
+    width: auto;
 }
